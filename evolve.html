@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+      }
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #09701a; /* Background color for the navigation bar */
+      }
+
+      /* Style the navigation bar items */
+      ul.navbar li {
+        float: left;
+      }
+
+      ul.navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      ul.navbar li a:hover {
+        background-color: #035e1acc; /* Background color on hover */
+      }
+      .general {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+      }
+      #goToTopBtn {
+        display: none; /* Hide the button by default */
+        position: fixed; /* Fixed position to stay at the bottom right */
+        bottom: 20px;
+        right: 30px;
+        z-index: 99; /* Make sure it's above other elements */
+        border: none;
+        outline: none;
+        background-color: #065e2b; /* Button background color */
+        color: white; /* Button text color */
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 4px;
+      }
+
+      /* Style for the button when the user hovers over it */
+      #goToTopBtn:hover {
+        background-color: #065e2b;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evolve Racing- in Touch With Tomorrow</title>
+  </head>
+  <body>
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to Top">Top</button>
+
+    <script>
+      // JavaScript function to scroll to the top of the page
+      function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      }
+
+      // Show the button when the user scrolls down 20px from the top of the document
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("goToTopBtn").style.display = "block";
+        } else {
+          document.getElementById("goToTopBtn").style.display = "none";
+        }
+      }
+    </script>
+    <div id="home" class="container" style="background-color: rgb(44, 172, 44)">
+      <div class="image">
+        <img src="logo.jpg" width="300px" />
+      </div>
+      <div class="text">
+        <p style="font-size: 55px; color: beige">EVOLVE RACING</p>
+        <p style="font-size: 25px; color: beige">-in Touch with Tomorrow</p>
+      </div>
+    </div>
+    <hr />
+    <ul class="navbar">
+      <li>
+        <a href="#home"><p style="font-size: 20px">Home</p></a>
+      </li>
+      <li>
+        <a href="#members"><p style="font-size: 20px">Members</p></a>
+      </li>
+      <li>
+        <a href="#subsystem"><p style="font-size: 20px">Subsystem</p></a>
+      </li>
+      <li>
+        <a href="#media"><p style="font-size: 20px">Media</p></a>
+      </li>
+      <li>
+        <a href="#sponsors"><p style="font-size: 20px">Sponors</p></a>
+      </li>
+      <li>
+        <a href="#join"><p style="font-size: 20px">Join Us</p></a>
+      </li>
+      <li>
+        <a href="#about"><p style="font-size: 20px">About Us</p></a>
+      </li>
+      <li>
+        <a href="#racing"><p style="font-size: 20px">Racing</p></a>
+      </li>
+      <li>
+        <a href="#achievements"><p style="font-size: 20px">Achievements</p></a>
+      </li>
+    </ul>
+    <div id="members">
+      <p style="color: rgb(21, 71, 128); font-size: 40px"><u>MEMBERS</u></p>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>CAPTAIN</b></legend>
+        <img src="person 1.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the captain of our team is abcd. He is currently a student
+          in CET. He is pursuing Electrical and Electronics Engineering. But due
+          to his craze in racing and cars, he has decided to be the captain and
+          lead the evolve racing group fromn the front.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>VICE CAPTAIN</b></legend>
+        <img src="person 2.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the vice captain of our team is bcda. She is currently a
+          student in CET. She is pursuing Electrical and Electronics
+          Engineering. She gives opinions about all thing in presence of the
+          captain. She herself take the role of captain in his absence.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>CHIEF FINANCE OFFICER</b></legend>
+        <img src="person 4.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the chief finance officer of our team is cdab. He is
+          currently a student in CET. He is pursuing Electrical and Electronics
+          Engineering.He manages the financial activities of the club. He is
+          responsible for ensuring the integrity of fiscal data and modeling
+          transparency and accountability.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>MECHANICAL R&D</b></legend>
+        <img src="person 3.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the mechanical r&d of our team is bdda. She is currently a
+          student in CET. She is pursuing Electrical and Electronics
+          Engineering. She takes care of the research and development of the
+          mechanical activites. It is an important role and she does a good job
+          doing it.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>ELECTRICAL R&D</b></legend>
+        <img src="person 4.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the electrical r&d of our team is cdda. He is currently a
+          student in CET. He is pursuing Electrical and Electronics Engineering.
+          He is responsible for the design of new standard concepts for our
+          product group.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>PRODUCTION HEAD</b></legend>
+        <img src="person 1.png" width="100px" />
+        <p style="font-size: 25px">
+          The name of the production head of our team is cdda. He is currently a
+          student in CET. He is pursuing Electrical and Electronics Engineering.
+          He oversees the production process and coordinates all activities to
+          ensure enough resources on hand. He plans workers' schedules, estimate
+          costs and prepare budgets to ensure workflow meets required deadlines.
+        </p>
+      </fieldset>
+    </div>
+    <div id="subsystem">
+      <p style="color: rgb(21, 71, 128); font-size: 40px"><u>SUBSYSTEM</u></p>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>BREAKING</b></legend>
+        <img
+          src="https://gomechanic.in/blog/wp-content/uploads/2020/04/Bremsen-2-en-1000x978.jpg"
+          width="200px"
+        />
+        <p style="font-size: 25px">
+          Brakes, they are real lifesavers! When you need to stop or slow down,
+          just step on that brake pedal, and the magic happens. The braking
+          system uses hydraulic power to squeeze those brake pads against the
+          wheels, creating friction, and bringing the vehicle to a smooth
+          stop.When the brake pedal is applied the two curved brake shoes, which
+          have a friction material lining, are forced by hydraulic wheel
+          cylinders against the inner surface of a rotating brake drum. The
+          result of this contact produces friction which enables the vehicle to
+          slow down or stop.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>SUSPENSION AND STEERING</b></legend>
+        <img
+          src="https://learnmech.com/wp-content/uploads/2019/04/suspension-system.png"
+          width="300px"
+        />
+        <p style="font-size: 25px">
+          The suspension system is like magic for a smooth ride! It's got
+          springs and shock absorbers that soak up all those pesky bumps and
+          vibrations, making your drive way more comfortable. And guess what?
+          The steering system is the reason you can easily navigate the roads!
+          With a turn of the steering wheel, you can gracefully glide around
+          corners and steer.he primary function of your cars suspension and
+          steering systems is to allow the wheels to move independently of the
+          car, while keeping it “suspended” and stable. Any play or uncontrolled
+          motion in these systems results in a deterioration of handling and
+          accelerated tire wear.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px"><b>TRANSMISSION</b></legend>
+        <img
+          src="data:image/jpeg;base64,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"
+          width="300px"
+        />
+        <p style="font-size: 25px">
+          The mechanism that transmits the power developed by the engine of
+          automobile to the engine to the driving wheels is called the
+          TRANSMISSION SYSTEM (or POWER TRAIN).It's the secret behind your
+          vehicle's power and gears! It cleverly shifts gears, allowing the
+          engine to work efficiently and give you the right amount of power for
+          your driving needs.In a car, a transmission, or a gearbox, acts as the
+          medium that transmits power generated by the engine to the wheels via
+          a mechanical system of gears and gear trains. A transmission allows a
+          person to apply power to a vehicle in a controlled manner, without
+          which, the car would not efficiently move.
+        </p>
+      </fieldset>
+      <fieldset class="general" style="border-width: 10px">
+        <legend style="font-size: 30px">
+          <b>ELECTRICAL AND ELECTRONICS</b>
+        </legend>
+        <img
+          src="https://i0.wp.com/studentlesson.com/wp-content/uploads/2020/11/vehicle-electrical-system-parts.jpg?resize=550%2C400&ssl=1"
+          width="300px"
+        />
+        <p style="font-size: 25px">
+          Electrical system is like the brain of your ride! It handles all the
+          electrical stuff, from the engine to lights and entertainment.
+          Battery, alternator, fuses, and wiring – they're all part of this
+          superhero system. Without it, your vehicle would just be a bunch of
+          metal parts with no life. A Car's electrical system is very complex in
+          today's auto industries, everything from lights, brakes, accessories,
+          ignitions, and throttles are all controlled electronically. The list
+          below represents a general inventory of components that may be found
+          within a vehicle depending on how complex its electrical system.
+        </p>
+      </fieldset>
+    </div>
+    <div id="media">
+      <p style="color: rgb(21, 71, 128); font-size: 40px"><u>MEDIA</u></p>
+      <img src="logo.jpg" alt="1st image" width="400px" />
+      <img
+        src="https://i.ytimg.com/vi/WUfs4aav5K4/maxresdefault.jpg"
+        alt="2nd image"
+        width="400px"
+      />
+      <img
+        src="https://www.motorsportjobs.com/sites/default/files/styles/motorjob_company_profile_gallery_image/public/company-profile-gallery/evolve4.jpg?itok=xkBpbDFX"
+        alt="3rd image"
+        width="400px"
+      />
+      <img
+        src="https://static.wixstatic.com/media/65a0d8_b95b75b6d1cf45f18e9c1bddb9e9ba44~mv2.jpg/v1/fill/w_560,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/65a0d8_b95b75b6d1cf45f18e9c1bddb9e9ba44~mv2.jpg"
+        alt="4th image"
+        width="250px"
+      />
+      <video src="evolve.mp4" controls width="500px" poster="logo.jpg"></video>
+    </div>
+    <div id="sponsors">
+      <p style="color: rgb(21, 71, 128); font-size: 40px"><u>SPONSORS</u></p>
+      <p style="font-size: 30px">Sir ABCD</p>
+      <img
+        src="person 1.png"
+        width="300px"
+        style="border: 5px solid #000000; padding: 3px; margin: 5px"
+      />
+      <br />
+      <p style="font-size: 30px">Madam BCDA</p>
+      <img
+        src="person 2.png"
+        alt=""
+        width="300px"
+        style="border: 5px solid #000000; padding: 3px; margin: 5px"
+      />
+    </div>
+    <div id="join">
+      <p style="color: rgb(21, 71, 128); font-size: 40px"><u>JOIN US</u></p>
+      <fieldset style="border-width: 20px">
+        <legend>
+          <p style="font-size: 25px; color: rgb(21, 6, 158)">
+            FILL THE FORM BELOW
+          </p>
+        </legend>
+        <label for="fname" style="font-size: 25px">First Name:</label><br />
+        <input type="text" required style="height: 30px" /><br />
+        <label for="lname" style="font-size: 25px">Last Name:</label><br />
+        <input type="text" required style="height: 30px" /><br />
+        <label for="gender" style="font-size: 25px">Gender:</label><br />
+        <p style="font-size: 25px">
+          Male<input type="radio" name="gender" /> <br />Female<input
+            type="radio"
+            name="gender"
+          /><br />
+          Other<input type="radio" name="gender" />
+        </p>
+        <label for="dob" style="font-size: 25px">DOB:</label><br />
+        <input type="date" required style="height: 40px" /><br />
+        <label for="quali" style="font-size: 25px">Qualification:</label><br />
+        <input type="text" required style="height: 40px" /><br />
+        <label for="mail" style="font-size: 25px">Email:</label><br />
+        <input type="email" required style="height: 40px" /><br />
+        <label for="mobile" style="font-size: 25px">Contact Number:</label
+        ><br />
+        <input
+          type="tel"
+          required
+          pattern="[0-9]{3}-[0-9]{10}"
+          placeholder="91-1234567890"
+          style="height: 40px"
+        /><br />
+        <label for="address" style="font-size: 25px">Adress Line 1:</label
+        ><br />
+        <input type="text" required style="height: 40px" /><br />
+        <label for="address" style="font-size: 25px">Adress Line 2:</label
+        ><br />
+        <input type="text" required style="height: 40px" /><br />
+        <label for="address" style="font-size: 25px">Adress Line 3:</label
+        ><br />
+        <input type="text" style="height: 40px" /><br />
+        <button style="height: 50px; width: 172px">
+          <p style="font-size: 20px; text-align: center">Submit</p>
+        </button>
+      </fieldset>
+    </div>
+    <div id="about">
+      <p style="color: rgb(21, 71, 128); font-size: 30px"><u>ABOUT US</u></p>
+      <fieldset style="border-width: 10px; border-color: rgb(192, 219, 189)">
+        <p style="font-size: 26px">
+          Official club of CET focused on sustainable e-mobility
+          solutions.Engineering and constructing solar-powered Electrical
+          Vehicle. ISIE is a non-profit organization based in India that fcuses
+          on promoting innovation, research and developement in the field of
+          engineering. ISIE aims to create a platform for students, ebgineers
+          and industry professionals to come togeter and work towards
+          sustainable and innovative
+        </p>
+      </fieldset>
+    </div>
+    <div id="racing">
+      <p style="color: rgb(21, 71, 128); font-size: 30px"><u>RACING</u></p>
+      <fieldset style="border-width: 10px; border-color: rgb(192, 219, 189)">
+        <p style="font-size: 26px">
+          All news about our racing events will be posted here.
+        </p>
+      </fieldset>
+    </div>
+    <p style="color: rgb(21, 71, 128); font-size: 30px"><u>ACHIEVEMENTS</u></p>
+    <div id="achievements">
+      <fieldset style="border-width: 10px; border-color: rgb(192, 219, 189)">
+        <p style="font-size: 26px">
+          *All our achievements will be posted here.
+        </p>
+      </fieldset>
+    </div>
+  </body>
+</html>
